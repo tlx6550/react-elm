@@ -14,12 +14,16 @@ let defaultState = {
 export default (state = defaultState, action = {}) => {
   switch (action.type) {
     case user.SAVE_USERINFO:
+    //存储userInfo进入statez中并且返回一个对象，该对象包含键值对
       return {
         ...state,
         userInfo: action.userInfo
       }
     case user.SAVE_ATTRINFO:
-      return {...state, ...{[action.datatype]: action.value}};
+      return {
+      	...state,
+      	...{[action.datatype]: action.value}
+      	};
     case user.MODIFY_USERINFO:
       return {...state, userInfo: {...state.userInfo, [action.key]: action.value}};
     default:

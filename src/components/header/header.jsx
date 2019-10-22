@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './header.scss'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { is, fromJS } from 'immutable';  // 保证数据的不可变
+import { is, fromJS } from 'immutable';  // 保证数据的不可变 https://www.jianshu.com/p/0fa8c7456c15
 
 class Header extends Component {
   static propTypes = {

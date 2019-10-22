@@ -28,7 +28,8 @@ class AlertTip extends Component {
               <div onClick={this.handleClick}>再等等</div>
               <div onClick={this.handleLogout}>狠心离开</div>
             </div>
-            :<div className='confirm' onClick={this.handleClick}>确认</div>}
+            :<div className='confirm' onClick={this.handleClick}>确认</div>
+           }
           
         </section>
       </div>
